@@ -2,5 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-// README.md를 읽고 코드를 작성하세요.
-Console.WriteLine("코드를 작성하세요.");
+class GameItem
+{
+    public string Name { get; set; }
+    public string Type { get; set; }
+    public string Grade { get; set; }
+    public int Price { get; set; }
+    public int Quantity { get; set; }
+
+    List<GameItem> items = new List<GameItem>
+    {
+        new GameItem { Name = "나무 검", Type = "무기", Grade = "일반"}
+    }
+}
